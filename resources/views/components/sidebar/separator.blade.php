@@ -1,0 +1,4 @@
+{{-- Sidebar Content Separator --}}
+@props([])
+
+<hr {{ $attributes->merge(['class' => 'my-4 border-gray-200 dark:border-gray-700']) }}>
