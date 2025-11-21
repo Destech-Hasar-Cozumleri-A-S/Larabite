@@ -31,7 +31,7 @@ Flowbite Laravel Components, **60+ önceden oluşturulmuş UI bileşeni** içere
 Composer ile paketi yükleyin:
 
 ```bash
-composer require destech-packages/flowbite-laravel
+composer require destech-hasar-cozumleri-a-s/larabite
 ```
 
 Service provider otomatik olarak keşfedilecektir (Laravel 5.5+).
