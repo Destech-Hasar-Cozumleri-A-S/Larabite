@@ -1,0 +1,27 @@
+/vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Laravel
+.env
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Composer
+composer.lock
+composer.phar
+
+# Build
+/build/
