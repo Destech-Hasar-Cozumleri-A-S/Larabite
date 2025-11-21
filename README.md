@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-<a href="https://packagist.org/packages/destech-packages/flowbite-laravel"><img src="https://img.shields.io/packagist/v/destech-packages/flowbite-laravel" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/destech-packages/flowbite-laravel"><img src="https://img.shields.io/packagist/dt/destech-packages/flowbite-laravel" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/destech-packages/flowbite-laravel"><img src="https://img.shields.io/packagist/l/destech-packages/flowbite-laravel" alt="License"></a>
+<a href="https://packagist.org/packages/destech-hasar-cozumleri-a-s/larabite"><img src="https://img.shields.io/packagist/v/destech-hasar-cozumleri-a-s/larabite" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/destech-hasar-cozumleri-a-s/larabite"><img src="https://img.shields.io/packagist/dt/destech-hasar-cozumleri-a-s/larabite" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/destech-hasar-cozumleri-a-s/larabite"><img src="https://img.shields.io/packagist/l/destech-hasar-cozumleri-a-s/larabite" alt="License"></a>
 </p>
 
 ## Hakkında
@@ -69,7 +69,7 @@ module.exports = {
   content: [
     './resources/**/*.blade.php',
     './resources/**/*.js',
-    './vendor/destech-packages/flowbite-laravel/resources/**/*.blade.php',
+    './vendor/destech-hasar-cozumleri-a-s/larabite/resources/**/*.blade.php',
   ],
   theme: {
     extend: {},
@@ -526,8 +526,8 @@ MIT Lisansı. Detaylar için [LICENSE.md](LICENSE.md) dosyasına bakın.
 ## Destek
 
 - 📧 Email: erman.titiz@destechhasar.com
-- 🐛 Issues: [GitHub Issues](https://github.com/destech-packages/flowbite-laravel/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/destech-packages/flowbite-laravel/discussions)
+- 🐛 Issues: [GitHub Issues](https://github.com/destech-hasar-cozumleri-a-s/larabite/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/destech-hasar-cozumleri-a-s/larabite/discussions)
 
 ---
 
