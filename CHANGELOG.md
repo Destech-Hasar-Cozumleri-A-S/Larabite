@@ -2,7 +2,7 @@
 
 All notable changes to `flowbite-laravel` will be documented in this file.
 
-## [1.0.0] - 2025-01-21
+## [1.0.3] - 2025-01-21
 
 ### Added
 
