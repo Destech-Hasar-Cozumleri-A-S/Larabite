@@ -93,17 +93,6 @@ Form input elements with validation support.
 | [Radio Group](components/forms/radio-group.md) | Radio button groups | `ui/form-radio-group.blade.php` |
 | [Floating Label](components/forms/floating-label.md) | Floating label inputs | `ui/form/floating-label.blade.php` |
 
-### 🌟 Feed Components
-
-Social feed and post-related components.
-
-[📖 View Feed Components Documentation](components/feed/README.md)
-
-- Post Badges
-- Post Header
-- Post Media
-- Post Actions
-- Comment Items
 
 ### 🪟 Modal Components
 
@@ -115,15 +104,6 @@ Modal dialog and overlay components.
 - Modal Close Button
 - Confirmation Modals
 - Form Modals
-
-### 🐾 Pet Components
-
-Pet-specific components for profiles and forms.
-
-[📖 View Pet Components Documentation](components/pet/README.md)
-
-- Pet Form Fields
-- Pet Profile Header
 
 ### 🎠 Carousel Components
 
@@ -200,9 +180,7 @@ resources/views/components/
 │   ├── bottom-nav/              # Bottom navigation
 │   ├── avatar/                  # Avatar variants
 │   └── clipboard/               # Clipboard variants
-├── feed/                        # Feed-specific components
-├── modal/                       # Modal components
-└── pets/                        # Pet-specific components
+└── modal/                       # Modal components
 ```
 
 ### Documentation Structure
@@ -218,9 +196,7 @@ docs/
 │   ├── typography/             # Typography docs
 │   ├── ui/                     # UI component docs
 │   ├── forms/                  # Form component docs
-│   ├── feed/                   # Feed component docs
 │   ├── modal/                  # Modal component docs
-│   ├── pet/                    # Pet component docs
 │   ├── carousel/               # Carousel component docs
 │   └── chat/                   # Chat component docs
 └── COMPONENTS_GUIDE.md         # Original comprehensive guide
@@ -269,9 +245,7 @@ docs/
 - [Typography Components](components/typography/)
 - [UI Components](components/ui/)
 - [Form Components](components/forms/)
-- [Feed Components](components/feed/README.md)
 - [Modal Components](components/modal/README.md)
-- [Pet Components](components/pet/README.md)
 - [Carousel Components](components/carousel/README.md)
 - [Chat Components](components/chat/README.md)
 
