@@ -44,7 +44,7 @@
 
 @if($variant === 'default')
     {{-- Default Checkbox --}}
-    <div class="flex items-center" {{ $attributes->only(['class', 'wire:key']) }}>
+    <div class="flex items-center" {{ $attributes->only(['wire:key']) }}>
         <input
             id="{{ $id }}"
             type="checkbox"
@@ -54,7 +54,7 @@
             {{ $disabled ? 'disabled' : '' }}
             {{ $required ? 'required' : '' }}
             @if($helper) aria-describedby="{{ $helperId }}" @endif
-            {{ $attributes->except(['class', 'wire:key'])->merge(['class' => $checkboxClasses]) }}
+            {{ $attributes->except(['wire:key'])->merge(['class' => $checkboxClasses]) }}
         >
         @if($label)
             <label for="{{ $id }}" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
@@ -82,7 +82,7 @@
 
 @elseif($variant === 'link')
     {{-- Checkbox with Link in Label --}}
-    <div class="flex items-center" {{ $attributes->only(['class', 'wire:key']) }}>
+    <div class="flex items-center" {{ $attributes->only(['wire:key']) }}>
         <input
             id="{{ $id }}"
             type="checkbox"
@@ -91,7 +91,7 @@
             {{ $checked ? 'checked' : '' }}
             {{ $disabled ? 'disabled' : '' }}
             {{ $required ? 'required' : '' }}
-            {{ $attributes->except(['class', 'wire:key'])->merge(['class' => $checkboxClasses]) }}
+            {{ $attributes->except(['wire:key'])->merge(['class' => $checkboxClasses]) }}
         >
         @if($label)
             <label for="{{ $id }}" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
@@ -108,7 +108,7 @@
 
 @elseif($variant === 'bordered')
     {{-- Bordered Checkbox (Card Style) --}}
-    <div class="flex items-center ps-4 border border-gray-200 rounded dark:border-gray-700" {{ $attributes->only(['class', 'wire:key']) }}>
+    <div class="flex items-center ps-4 border border-gray-200 rounded dark:border-gray-700" {{ $attributes->only(['wire:key']) }}>
         <input
             id="{{ $id }}"
             type="checkbox"
@@ -118,7 +118,7 @@
             {{ $disabled ? 'disabled' : '' }}
             {{ $required ? 'required' : '' }}
             @if($description) aria-describedby="{{ $helperId }}" @endif
-            {{ $attributes->except(['class', 'wire:key'])->merge(['class' => $checkboxClasses]) }}
+            {{ $attributes->except(['wire:key'])->merge(['class' => $checkboxClasses]) }}
         >
         <label for="{{ $id }}" class="w-full py-4 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
             @if($icon)
@@ -148,7 +148,7 @@
 
 @elseif($variant === 'list-group')
     {{-- List Group Item --}}
-    <li class="w-full border-b border-gray-200 dark:border-gray-600" {{ $attributes->only(['class', 'wire:key']) }}>
+    <li class="w-full border-b border-gray-200 dark:border-gray-600" {{ $attributes->only(['wire:key']) }}>
         <div class="flex items-center ps-3">
             <input
                 id="{{ $id }}"
@@ -158,7 +158,7 @@
                 {{ $checked ? 'checked' : '' }}
                 {{ $disabled ? 'disabled' : '' }}
                 {{ $required ? 'required' : '' }}
-                {{ $attributes->except(['class', 'wire:key'])->merge(['class' => $checkboxClasses]) }}
+                {{ $attributes->except(['wire:key'])->merge(['class' => $checkboxClasses]) }}
             >
             <label for="{{ $id }}" class="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                 {{ $label }}
@@ -168,7 +168,7 @@
 
 @elseif($variant === 'inline')
     {{-- Inline Checkbox --}}
-    <div class="flex items-center" {{ $attributes->only(['class', 'wire:key']) }}>
+    <div class="flex items-center" {{ $attributes->only(['wire:key']) }}>
         <input
             id="{{ $id }}"
             type="checkbox"
@@ -177,7 +177,7 @@
             {{ $checked ? 'checked' : '' }}
             {{ $disabled ? 'disabled' : '' }}
             {{ $required ? 'required' : '' }}
-            {{ $attributes->except(['class', 'wire:key'])->merge(['class' => $checkboxClasses]) }}
+            {{ $attributes->except(['wire:key'])->merge(['class' => $checkboxClasses]) }}
         >
         <label for="{{ $id }}" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
             {{ $label }}
@@ -186,7 +186,7 @@
 
 @elseif($variant === 'color')
     {{-- Color Variant Checkbox --}}
-    <div class="flex items-center" {{ $attributes->only(['class', 'wire:key']) }}>
+    <div class="flex items-center" {{ $attributes->only(['wire:key']) }}>
         <input
             id="{{ $id }}"
             type="checkbox"
@@ -195,7 +195,7 @@
             {{ $checked ? 'checked' : '' }}
             {{ $disabled ? 'disabled' : '' }}
             {{ $required ? 'required' : '' }}
-            {{ $attributes->except(['class', 'wire:key'])->merge(['class' => $checkboxClasses]) }}
+            {{ $attributes->except(['wire:key'])->merge(['class' => $checkboxClasses]) }}
         >
         @if($label)
             <label for="{{ $id }}" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
@@ -206,7 +206,7 @@
 
 @else
     {{-- Fallback to default --}}
-    <div class="flex items-center" {{ $attributes->only(['class', 'wire:key']) }}>
+    <div class="flex items-center" {{ $attributes->only(['wire:key']) }}>
         <input
             id="{{ $id }}"
             type="checkbox"
@@ -215,7 +215,7 @@
             {{ $checked ? 'checked' : '' }}
             {{ $disabled ? 'disabled' : '' }}
             {{ $required ? 'required' : '' }}
-            {{ $attributes->except(['class', 'wire:key'])->merge(['class' => $checkboxClasses]) }}
+            {{ $attributes->except(['wire:key'])->merge(['class' => $checkboxClasses]) }}
         >
         @if($label)
             <label for="{{ $id }}" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">

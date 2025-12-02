@@ -54,7 +54,7 @@
 
 @if($variant === 'default')
     {{-- Default Toggle with Label --}}
-    <div {{ $attributes->only(['class', 'wire:key']) }}>
+    <div {{ $attributes->only(['wire:key']) }}>
         <label class="inline-flex items-center cursor-pointer {{ $disabled ? 'cursor-not-allowed opacity-50' : '' }}">
             <input
                 type="checkbox"
@@ -96,7 +96,7 @@
 
 @elseif($variant === 'double-label')
     {{-- Toggle with Labels Before and After --}}
-    <div {{ $attributes->only(['class', 'wire:key']) }}>
+    <div {{ $attributes->only(['wire:key']) }}>
         <label class="inline-flex items-center cursor-pointer {{ $disabled ? 'cursor-not-allowed opacity-50' : '' }}">
             @if($labelBefore)
                 <span class="me-3 text-sm font-medium text-gray-900 dark:text-gray-300">{{ $labelBefore }}</span>
@@ -143,7 +143,7 @@
 
 @elseif($variant === 'icon')
     {{-- Toggle with Icons --}}
-    <div {{ $attributes->only(['class', 'wire:key']) }}>
+    <div {{ $attributes->only(['wire:key']) }}>
         <label class="inline-flex items-center cursor-pointer {{ $disabled ? 'cursor-not-allowed opacity-50' : '' }}">
             <input
                 type="checkbox"
@@ -197,7 +197,7 @@
 
 @elseif($variant === 'card')
     {{-- Toggle in Card Format --}}
-    <div class="p-4 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700" {{ $attributes->only(['class', 'wire:key']) }}>
+    <div class="p-4 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700" {{ $attributes->only(['wire:key']) }}>
         <label class="flex items-center justify-between cursor-pointer {{ $disabled ? 'cursor-not-allowed opacity-50' : '' }}">
             <div class="flex items-center {{ $icon ? 'space-x-3' : '' }}">
                 @if($icon)
@@ -254,7 +254,7 @@
 
 @else
     {{-- Fallback to default --}}
-    <div {{ $attributes->only(['class', 'wire:key']) }}>
+    <div {{ $attributes->only(['wire:key']) }}>
         <label class="inline-flex items-center cursor-pointer {{ $disabled ? 'cursor-not-allowed opacity-50' : '' }}">
             <input
                 type="checkbox"

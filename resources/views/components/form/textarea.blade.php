@@ -41,7 +41,7 @@
     $id = $name ?? 'textarea-' . uniqid();
 @endphp
 
-<div {{ $attributes->only(['class', 'wire:key']) }}>
+<div {{ $attributes->only(['wire:key']) }}>
     @if($label)
         <x-ui::form.label :for="$id" :required="$required">
             {{ $label }}
@@ -57,7 +57,7 @@
         {{ $required ? 'required' : '' }}
         {{ $readonly ? 'readonly' : '' }}
         @if($maxlength) maxlength="{{ $maxlength }}" @endif
-        {{ $attributes->except(['class', 'wire:key'])->merge(['class' => $textareaClasses]) }}
+        {{ $attributes->except(['wire:key'])->merge(['class' => $textareaClasses]) }}
     >{{ $value ?? $slot }}</textarea>
 
     @if($showCharCount && $maxlength)

@@ -37,7 +37,7 @@
     $valueId = $id . '-value';
 @endphp
 
-<div {{ $attributes->only(['class', 'wire:key']) }}>
+<div {{ $attributes->only(['wire:key']) }}>
     @if($label)
         <div class="flex justify-between items-center mb-2">
             <label for="{{ $id }}" class="block text-sm font-medium text-gray-900 dark:text-white">
@@ -67,8 +67,7 @@
             step="{{ $step }}"
             {{ $disabled ? 'disabled' : '' }}
             {{ $required ? 'required' : '' }}
-            class="{{ $rangeClasses }}"
-            {{ $attributes->except(['class', 'wire:key']) }}
+            {{ $attributes->except(['wire:key'])->merge(['class' => $rangeClasses]) }}
             @if($showValue)
                 oninput="document.getElementById('{{ $valueId }}').textContent = '{{ $valuePrefix }}' + this.value + '{{ $valueSuffix }}'"
             @endif
@@ -93,8 +92,7 @@
             step="{{ $step }}"
             {{ $disabled ? 'disabled' : '' }}
             {{ $required ? 'required' : '' }}
-            class="{{ $rangeClasses }}"
-            {{ $attributes->except(['class', 'wire:key']) }}
+            {{ $attributes->except(['wire:key'])->merge(['class' => $rangeClasses]) }}
             @if($showValue)
                 oninput="document.getElementById('{{ $valueId }}').textContent = '{{ $valuePrefix }}' + this.value + '{{ $valueSuffix }}'"
             @endif
@@ -122,8 +120,7 @@
             step="{{ $step }}"
             {{ $disabled ? 'disabled' : '' }}
             {{ $required ? 'required' : '' }}
-            class="{{ $rangeClasses }}"
-            {{ $attributes->except(['class', 'wire:key']) }}
+            {{ $attributes->except(['wire:key'])->merge(['class' => $rangeClasses]) }}
             @if($showValue)
                 oninput="document.getElementById('{{ $valueId }}').textContent = '{{ $valuePrefix }}' + this.value + '{{ $valueSuffix }}'"
             @endif
@@ -147,8 +144,7 @@
             step="{{ $step }}"
             {{ $disabled ? 'disabled' : '' }}
             {{ $required ? 'required' : '' }}
-            class="{{ $rangeClasses }}"
-            {{ $attributes->except(['class', 'wire:key']) }}
+            {{ $attributes->except(['wire:key'])->merge(['class' => $rangeClasses]) }}
         >
     @endif
 

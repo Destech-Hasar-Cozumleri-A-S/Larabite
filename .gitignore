@@ -25,3 +25,4 @@ composer.phar
 
 # Build
 /build/
+jira.local.json

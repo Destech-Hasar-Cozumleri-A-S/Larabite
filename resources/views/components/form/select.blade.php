@@ -45,7 +45,7 @@
 
 @if($variant === 'default')
     {{-- Default Select --}}
-    <div {{ $attributes->only(['class', 'wire:key']) }}>
+    <div {{ $attributes->only(['wire:key']) }}>
         @if($label)
             <x-ui::form.label :for="$id" :required="$required">
                 {{ $label }}
@@ -59,7 +59,7 @@
             {{ $required ? 'required' : '' }}
             {{ $multiple ? 'multiple' : '' }}
             @if($selectSize) size="{{ $selectSize }}" @endif
-            {{ $attributes->except(['class', 'wire:key'])->merge(['class' => $selectClasses]) }}
+            {{ $attributes->except(['wire:key'])->merge(['class' => $selectClasses]) }}
         >
             @if(!$multiple && $placeholder)
                 <option value="" selected>{{ $placeholder }}</option>
@@ -72,7 +72,7 @@
 
 @elseif($variant === 'underline')
     {{-- Underline Select --}}
-    <div class="relative z-0" {{ $attributes->only(['class', 'wire:key']) }}>
+    <div class="relative z-0" {{ $attributes->only(['wire:key']) }}>
         <select
             id="{{ $id }}"
             name="{{ $name }}"
@@ -80,7 +80,7 @@
             {{ $required ? 'required' : '' }}
             {{ $multiple ? 'multiple' : '' }}
             @if($selectSize) size="{{ $selectSize }}" @endif
-            {{ $attributes->except(['class', 'wire:key'])->merge(['class' => $selectClasses]) }}
+            {{ $attributes->except(['wire:key'])->merge(['class' => $selectClasses]) }}
         >
             @if(!$multiple && $placeholder)
                 <option value="" selected>{{ $placeholder }}</option>
@@ -102,7 +102,7 @@
 
 @else
     {{-- Fallback to default --}}
-    <div {{ $attributes->only(['class', 'wire:key']) }}>
+    <div {{ $attributes->only(['wire:key']) }}>
         @if($label)
             <x-ui::form.label :for="$id" :required="$required">
                 {{ $label }}
@@ -116,7 +116,7 @@
             {{ $required ? 'required' : '' }}
             {{ $multiple ? 'multiple' : '' }}
             @if($selectSize) size="{{ $selectSize }}" @endif
-            {{ $attributes->except(['class', 'wire:key'])->merge(['class' => $selectClasses]) }}
+            {{ $attributes->except(['wire:key'])->merge(['class' => $selectClasses]) }}
         >
             @if(!$multiple && $placeholder)
                 <option value="" selected>{{ $placeholder }}</option>

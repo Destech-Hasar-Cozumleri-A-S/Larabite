@@ -51,7 +51,7 @@
     $id = $name ?? 'input-' . uniqid();
 @endphp
 
-<div {{ $attributes->only(['class', 'wire:key']) }}>
+<div {{ $attributes->only(['wire:key']) }}>
     @if($label)
         <x-ui::form.label :for="$id" :required="$required">
             {{ $label }}
@@ -77,7 +77,7 @@
             placeholder="{{ $placeholder }}"
             {{ $disabled ? 'disabled' : '' }}
             {{ $required ? 'required' : '' }}
-            {{ $attributes->except(['class', 'wire:key'])->merge(['class' => $inputClasses]) }}
+            {{ $attributes->except(['wire:key'])->merge(['class' => $inputClasses]) }}
         >
 
         @if($suffix)
